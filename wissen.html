@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="de-AT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vorsorge-Wissen – Black-In</title>
+  <meta name="description" content="Krisenvorsorge verständlich erklärt: Blackout, Wasser und Lebensmittel, Gesundheit und Psyche, wirtschaftliche Krisen, Kommunikation, Familie und Nachbarschaft.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Besucherstatistik (Matomo, ohne Cookies): Code vom Hoster hier einfügen -->
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="img/logo.svg" alt="" width="38" height="38">
+      <span class="brand-name">Black<span class="brand-in">-In</span><span class="brand-sub">Verein zur Krisenvorsorge</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menü</button>
+    <nav class="nav" id="nav" aria-label="Hauptmenü">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="wissen.html" aria-current="page">Vorsorge-Wissen</a></li>
+        <li><a href="checklisten.html">Checklisten</a></li>
+        <li><a href="termine.html">Termine</a></li>
+        <li><a href="verein.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+  <section class="hero page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Vorsorge-Wissen</p>
+      <h1>Gut vorbereitet, Schritt für Schritt</h1>
+      <p class="lead">Jedes Thema ist in drei Phasen gegliedert: was Sie <strong>vorher</strong> tun können, was <strong>während</strong> einer Krise zählt und was <strong>danach</strong> wichtig ist.</p>
+      <nav class="toc" aria-label="Themen">
+        <a href="#blackout">Blackout</a>
+        <a href="#vorrat">Wasser &amp; Lebensmittel</a>
+        <a href="#gesundheit">Gesundheit &amp; Psyche</a>
+        <a href="#wirtschaft">Wirtschaftliche Krisen</a>
+        <a href="#kommunikation">Kommunikation &amp; Warnung</a>
+        <a href="#familie">Familie &amp; Nachbarschaft</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Blackout -->
+  <article class="topic" id="blackout">
+    <div class="wrap">
+      <div class="topic-head">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div>
+          <h2>Blackout &amp; Stromausfall</h2>
+          <p>Ein Blackout ist ein großflächiger, länger dauernder Stromausfall. Dann fallen auch Handynetz, Tankstellen, Bankomaten, Kassen und teilweise die Wasserversorgung aus. Wer vorbereitet ist, kann bis zu 14 Tage gut zu Hause überbrücken.</p>
+        </div>
+      </div>
+      <!-- Blackout-Checkliste aus der Black-In App (Szenario „Längerer Blackout“, geplante Dauer 14 Tage) -->
+      <h3 style="display:flex; align-items:center; gap:10px; flex-wrap:wrap"><span class="tag" style="font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:800; background:var(--amber-soft); color:var(--amber); border:1px solid rgba(255,176,32,.35); padding:3px 8px; border-radius:6px">Vorher</span> Blackout-Checkliste für 14 Tage</h3>
+      <p class="muted">Die ersten Tage zählen vor allem Wasser, Licht, Information und Essen ohne Kochen. Für 14 Tage brauchen Sie zusätzlich eine Kochmöglichkeit ohne Strom, Wärme und Hygiene. Haken Sie ab, was Sie schon haben.</p>
+      <div class="progress no-print" style="max-width:420px; margin:0 0 20px">
+        <strong id="progress-label">0 erledigt</strong>
+        <div class="progress-bar" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="card cl-group">
+          <h3>Licht, Information &amp; Energie <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="b_radio"><span>Batterie- oder Kurbelradio<small>Behördeninfos kommen über den ORF</small></span></label></li>
+            <li><label><input type="checkbox" id="b_lampen"><span>Taschen- oder Stirnlampen und Ersatzbatterien</span></label></li>
+            <li><label><input type="checkbox" id="b_powerbank"><span>Powerbank oder Solarladegerät</span></label></li>
+            <li><label><input type="checkbox" id="b_kerzen"><span>Kerzen oder Laterne, dazu Feuerlöscher oder Löschdecke</span></label></li>
+          </ul>
+        </div>
+        <div class="card cl-group">
+          <h3>Kochen ohne Strom <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="b_kocher"><span>Campingkocher (Gas oder Spiritus)<small>nur gut belüftet verwenden</small></span></label></li>
+            <li><label><input type="checkbox" id="b_brennstoff"><span>Brennstoff für den Kocher für 14 Tage</span></label></li>
+            <li><label><input type="checkbox" id="b_zuender"><span>Feuerzeug und Streichhölzer</span></label></li>
+          </ul>
+        </div>
+        <div class="card cl-group">
+          <h3>Wasser <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="b_kanister"><span>Wasserkanister und Behälter zum Abfüllen</span></label></li>
+            <li><label><input type="checkbox" id="b_entkeimung"><span>Wasserfilter oder Entkeimungstabletten für Brauchwasser</span></label></li>
+            <li><label><input type="checkbox" id="b_brauch"><span>Gewusst: Bei Stromausfall sofort Behälter und Badewanne mit dem Restwasser aus der Leitung füllen</span></label></li>
+          </ul>
+        </div>
+        <div class="card cl-group">
+          <h3>Gesundheit &amp; Hygiene <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="b_apotheke"><span>Hausapotheke und persönliche Medikamente für 14 Tage</span></label></li>
+            <li><label><input type="checkbox" id="b_hygiene"><span>Hygieneartikel, Müllsäcke, Notfall-WC (Eimer und Beutel)</span></label></li>
+          </ul>
+        </div>
+        <div class="card cl-group">
+          <h3>Wärme <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="b_waerme"><span>Warme Kleidung, Decken, Schlafsäcke</span></label></li>
+          </ul>
+        </div>
+        <div class="card cl-group">
+          <h3>Organisation <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="b_plan"><span>Notfallplan mit Familie und Nachbarn besprochen<small>Treffpunkt, Kontakte auf Papier</small></span></label></li>
+            <li><label><input type="checkbox" id="b_bargeld"><span>Bargeld in kleinen Scheinen</span></label></li>
+            <li><label><input type="checkbox" id="b_doku"><span>Wichtige Dokumente griffbereit</span></label></li>
+            <li><label><input type="checkbox" id="b_kuehl"><span>Reihenfolge festgelegt: zuerst Kühlware, dann Tiefkühlware, dann Vorrat</span></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="margin-top:40px">Essen ohne Strom</h3>
+      <div class="grid grid-3" style="margin-bottom:40px">
+        <div class="card"><h3 style="font-size:1.05rem">Ohne Kochen</h3><p class="muted">Konserven (Fertiggerichte, Fisch, Gemüse), Knäckebrot oder Zwieback, Nüsse, Trockenobst, H-Milch, eingeweichte Haferflocken.</p></div>
+        <div class="card"><h3 style="font-size:1.05rem">Mit Campingkocher</h3><p class="muted">Nudeln, Reis, Kartoffeln, Hülsenfrüchte. Hülsenfrüchte brauchen lange und viel Brennstoff, vorher einweichen spart Energie.</p></div>
+        <div class="card"><h3 style="font-size:1.05rem">Ohne Kühlung haltbar</h3><p class="muted">Getreide, Reis, Nudeln, Hülsenfrüchte, Haferflocken, Öl, Zucker, Honig, Konserven, Nüsse, ungeöffnete H-Milch, Kartoffeln und Wurzelgemüse (kühl und dunkel).</p></div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3><span class="tag" style="font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:800; background:var(--amber-soft); color:var(--amber); border:1px solid rgba(255,176,32,.35); padding:3px 8px; border-radius:6px">Während</span></h3>
+          <ul class="check">
+            <li>Sofort alle Wasserbehälter und die Badewanne mit dem Restwasser aus dem Wasserhahn füllen</li>
+            <li>Ruhe bewahren, Batterie- oder Autoradio einschalten. Informationen kommen über den ORF.</li>
+            <li>Kühlschrank und Tiefkühler geschlossen halten</li>
+            <li>Elektrische Geräte ausstecken, eine Lampe eingeschaltet lassen. So merken Sie, wenn der Strom zurück ist.</li>
+            <li>Wasser sparen: Brauchwasser für WC und Hygiene, Trinkwasser nur zum Trinken und Kochen</li>
+            <li>Anweisungen von Gemeinde, Einsatzkräften und ORF folgen. Den Notruf nur im echten Notfall wählen, die Netze sind überlastet.</li>
+            <li>Nach älteren Nachbarn und Alleinstehenden sehen</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag" style="font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:800; background:var(--amber-soft); color:var(--amber); border:1px solid rgba(255,176,32,.35); padding:3px 8px; border-radius:6px">Danach</span></h3>
+          <ul class="check">
+            <li>Geräte nach und nach wieder einschalten, nicht alle gleichzeitig</li>
+            <li>Lebensmittel aus Kühl- und Gefrierschrank prüfen; Aufgetautes nicht wieder einfrieren</li>
+            <li>Verbrauchte Vorräte und Batterien ersetzen</li>
+            <li>Notieren, was gefehlt hat, und den Plan anpassen</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout">
+        <p><strong>Achtung, Kohlenmonoxid:</strong> Gasgriller, Holzkohlegriller, Heizstrahler für draußen und Notstromaggregate niemals in Innenräumen, in der Garage oder im Keller betreiben. Kohlenmonoxid ist unsichtbar, geruchlos und lebensgefährlich.</p>
+      </div>
+      <p class="muted" style="font-size:.95rem">Wie lange Wasserversorgung, Abwasser und Mobilfunk bei einem Blackout funktionieren, ist in jeder Gemeinde anders. Fragen Sie bei Ihrer Gemeinde nach.</p>
+    </div>
+  </article>
+
+  <!-- Vorrat -->
+  <article class="topic" id="vorrat">
+    <div class="wrap">
+      <div class="topic-head">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s-6 6.6-6 11.3a6 6 0 0 0 12 0C18 9.3 12 2.7 12 2.7z"/></svg></div>
+        <div>
+          <h2>Wasser &amp; Lebensmittel</h2>
+          <p>Empfohlen wird ein Vorrat für 14 Tage. Das klingt viel, lässt sich aber nach und nach beim normalen Einkauf aufbauen. Am besten ist ein <strong>„lebender Vorrat“</strong>: Sie kaufen, was Sie ohnehin essen, verbrauchen immer das Älteste zuerst und kaufen nach.</p>
+        </div>
+      </div>
+      <div class="vwn">
+        <div class="card">
+          <h3><span class="tag">Vorher</span></h3>
+          <ul class="check">
+            <li>Trinkwasser: mindestens 2 Liter pro Person und Tag</li>
+            <li>Lebensmittel, die ohne Kühlung halten und notfalls kalt essbar sind</li>
+            <li>An Babynahrung, Spezialkost und Haustierfutter denken</li>
+            <li>Kochmöglichkeit ohne Strom, z. B. Campingkocher mit Brennstoff</li>
+            <li>Bei einer Vorwarnung Badewanne und Kanister mit Wasser füllen (für WC und Waschen)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Während</span></h3>
+          <ul class="check">
+            <li>Zuerst Lebensmittel aus dem Kühlschrank essen, dann aus dem Gefrierschrank, zuletzt den Vorrat</li>
+            <li>Wasser sparen: Trinkwasser nur zum Trinken und Kochen</li>
+            <li>Leitungswasser abkochen, wenn die Gemeinde dazu auffordert</li>
+            <li>Campingkocher nur bei guter Belüftung verwenden</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Danach</span></h3>
+          <ul class="check">
+            <li>Vorrat wieder auffüllen</li>
+            <li>Haltbarkeitsdaten prüfen und den Vorrat neu sortieren</li>
+            <li>Überlegen: Was hat geschmeckt, was hat gefehlt?</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:24px"><a class="btn btn-dark" href="checklisten.html">Zur Vorrats-Checkliste →</a></p>
+    </div>
+  </article>
+
+  <!-- Gesundheit -->
+  <article class="topic" id="gesundheit">
+    <div class="wrap">
+      <div class="topic-head">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <div>
+          <h2>Gesundheit &amp; Psyche</h2>
+          <p>In einer Krise ist der Körper genauso gefordert wie die Seele. Gute Vorbereitung bedeutet beides: eine gut sortierte Hausapotheke und das Wissen, wie man sich und anderen seelisch beisteht.</p>
+        </div>
+      </div>
+      <div class="vwn">
+        <div class="card">
+          <h3><span class="tag">Vorher</span></h3>
+          <ul class="check">
+            <li>Hausapotheke prüfen und ergänzen</li>
+            <li>Mit dem Hausarzt besprechen, wie Sie Dauermedikamente für 2 Wochen vorrätig haben</li>
+            <li>Liste mit Medikamenten, Allergien und Vorerkrankungen auf Papier</li>
+            <li>Ersatzbrille und Hörgerätebatterien bereithalten</li>
+            <li>Erste-Hilfe-Kurs auffrischen</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Während</span></h3>
+          <ul class="check">
+            <li>Routinen beibehalten: regelmäßig essen, trinken und schlafen</li>
+            <li>Nur verlässliche Quellen nutzen und nicht ständig Nachrichten verfolgen</li>
+            <li>Kindern kindgerecht erklären, was passiert, und sie mithelfen lassen</li>
+            <li>Auf Hygiene achten, besonders beim Händewaschen</li>
+            <li>Aufeinander achten: Wer wirkt überfordert?</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Danach</span></h3>
+          <ul class="check">
+            <li>Gefühle zulassen, denn Erschöpfung und Unruhe sind normal</li>
+            <li>Mit Familie, Freunden oder Nachbarn über das Erlebte reden</li>
+            <li>Wenn Schlafprobleme oder Ängste länger bleiben: Hausarzt ansprechen</li>
+            <li>Rund um die Uhr erreichbar: Telefonseelsorge <strong>142</strong>, für junge Menschen Rat auf Draht <strong>147</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Wirtschaft -->
+  <article class="topic" id="wirtschaft">
+    <div class="wrap">
+      <div class="topic-head">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg></div>
+        <div>
+          <h2>Wirtschaftliche Krisen</h2>
+          <p>Teuerung, Jobverlust oder unerwartete Ausgaben können jeden treffen. Ein Überblick über die eigenen Finanzen und ein kleiner Puffer schaffen Sicherheit. Bei Schwierigkeiten hilft es, früh zu handeln.</p>
+        </div>
+      </div>
+      <div class="vwn">
+        <div class="card">
+          <h3><span class="tag">Vorher</span></h3>
+          <ul class="check">
+            <li>Fixkosten kennen: Miete, Strom, Versicherungen, Kredite</li>
+            <li>Einen Notgroschen für unerwartete Ausgaben aufbauen, auch in kleinen Schritten</li>
+            <li>Etwas Bargeld zu Hause, falls Kartenzahlung ausfällt</li>
+            <li>Verträge und wichtige Unterlagen geordnet aufbewahren</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Während</span></h3>
+          <ul class="check">
+            <li>Früh mit Bank, Vermieter oder Energieversorger reden, denn oft gibt es Lösungen</li>
+            <li>Unterstützung nutzen: Gemeinde, Sozialberatung, staatlich anerkannte Schuldenberatung</li>
+            <li>Keine überstürzten Entscheidungen treffen</li>
+            <li>Vorsicht bei Angeboten für „schnelles Geld“ und bei Betrugsversuchen</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Danach</span></h3>
+          <ul class="check">
+            <li>Den Puffer Schritt für Schritt wieder aufbauen</li>
+            <li>Ein Haushaltsbuch führen, auf Papier oder per App</li>
+            <li>Notieren, welche Hilfe gut funktioniert hat</li>
+          </ul>
+        </div>
+      </div>
+      <p style="color:var(--muted); font-size:.95rem; margin-top:20px">Hinweis: Das sind allgemeine Tipps zur Haushaltsführung, keine Finanz- oder Anlageberatung.</p>
+    </div>
+  </article>
+
+  <!-- Kommunikation -->
+  <article class="topic" id="kommunikation">
+    <div class="wrap">
+      <div class="topic-head">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1a10 10 0 0 1 0-14.2M19.1 4.9a10 10 0 0 1 0 14.2M7.8 16.2a6 6 0 0 1 0-8.4M16.2 7.8a6 6 0 0 1 0 8.4"/><circle cx="12" cy="12" r="1.5"/></svg></div>
+        <div>
+          <h2>Kommunikation &amp; Warnung</h2>
+          <p>In einer Krise sind Informationen besonders wichtig. Gleichzeitig fallen gewohnte Wege wie Handy und Internet oft aus. Kennen Sie die Signale und Ihre Informationsquellen?</p>
+        </div>
+      </div>
+      <h3>Sirenensignale in Österreich</h3>
+      <table class="simple" style="margin-bottom:28px">
+        <thead><tr><th>Signal</th><th>Klang</th><th>Was tun?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Warnung</strong></td><td>3 Minuten gleichbleibender Dauerton</td><td>Radio oder Fernsehen einschalten und auf Durchsagen achten</td></tr>
+          <tr><td><strong>Alarm</strong></td><td>1 Minute auf- und abschwellender Heulton</td><td>Schützende Räume aufsuchen und Radio hören</td></tr>
+          <tr><td><strong>Entwarnung</strong></td><td>1 Minute gleichbleibender Dauerton</td><td>Ende der Gefahr; weiter auf Hinweise achten</td></tr>
+          <tr><td><strong>Sirenenprobe</strong></td><td>15 Sekunden Dauerton</td><td>Kein Handlungsbedarf (Test)</td></tr>
+        </tbody>
+      </table>
+      <div class="vwn">
+        <div class="card">
+          <h3><span class="tag">Vorher</span></h3>
+          <ul class="check">
+            <li>Wichtige Telefonnummern auf Papier notieren</li>
+            <li>Batterie- oder Kurbelradio und Ersatzbatterien</li>
+            <li>Bei der Gemeinde nachfragen, ob es Notfall-Treffpunkte gibt</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Während</span></h3>
+          <ul class="check">
+            <li>Radio als Hauptquelle nutzen</li>
+            <li>Lieber SMS schicken als anrufen, das entlastet das Netz</li>
+            <li>Handy-Akku sparen: Helligkeit runter, Energiesparmodus an</li>
+            <li>Keine Gerüchte weiterverbreiten</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Danach</span></h3>
+          <ul class="check">
+            <li>Bei Angehörigen und Nachbarn melden</li>
+            <li>Notfallplan und Nummernliste aktualisieren</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Familie -->
+  <article class="topic" id="familie">
+    <div class="wrap">
+      <div class="topic-head">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+        <div>
+          <h2>Familie &amp; Nachbarschaft</h2>
+          <p>Gemeinsam ist man stärker. Ein einfacher Familienplan und eine gute Nachbarschaft sind oft mehr wert als jeder Vorrat.</p>
+        </div>
+      </div>
+      <div class="vwn">
+        <div class="card">
+          <h3><span class="tag">Vorher</span></h3>
+          <ul class="check">
+            <li>Treffpunkt ausmachen, falls niemand erreichbar ist</li>
+            <li>Festlegen, wer die Kinder von Schule oder Kindergarten abholt</li>
+            <li>Nachbarn kennenlernen: Wer braucht im Notfall Hilfe, wer kann helfen?</li>
+            <li>Notfallrucksack für jedes Familienmitglied</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Während</span></h3>
+          <ul class="check">
+            <li>Zusammenbleiben und Aufgaben verteilen</li>
+            <li>Bei Nachbarn nachsehen, besonders bei älteren oder kranken Menschen</li>
+            <li>Vorräte und Werkzeug teilen, wo es sinnvoll ist</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag">Danach</span></h3>
+          <ul class="check">
+            <li>Gemeinsam zurückblicken: Was hat gut geklappt?</li>
+            <li>Den Familienplan anpassen</li>
+            <li>Kontakte in der Nachbarschaft pflegen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section>
+    <div class="wrap">
+      <div class="callout">
+        <p><strong>Wichtig:</strong> Folgen Sie im Ernstfall immer den Anweisungen von Behörden, Gemeinde und Einsatzkräften. Im Notfall wählen Sie <strong>112</strong>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="brand-name">Black<span class="brand-in">-In</span><span class="brand-sub">Verein zur Krisenvorsorge</span></span></a>
+        <p style="margin-top:14px">Gemeinnütziger Verein mit Sitz in 6731 Sonntag, Vorarlberg.</p>
+        <p class="sos">Im Notfall: 112</p>
+      </div>
+      <div>
+        <h4>Inhalte</h4>
+        <ul>
+          <li><a href="wissen.html">Vorsorge-Wissen</a></li>
+          <li><a href="checklisten.html">Checklisten</a></li>
+          <li><a href="termine.html">Termine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Verein</h4>
+        <ul>
+          <li><a href="verein.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Black-In – Verein zur Krisenvorsorge</span>
+      <span>Die Informationen ersetzen keine Anweisungen von Behörden und Einsatzkräften.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

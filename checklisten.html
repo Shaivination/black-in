@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="de-AT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checklisten – Black-In</title>
+  <meta name="description" content="Checklisten zur Krisenvorsorge zum Abhaken und Ausdrucken: Vorrat für 14 Tage, Licht und Energie, Hygiene, Gesundheit, Dokumente, Notfallrucksack.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Besucherstatistik (Matomo, ohne Cookies): Code vom Hoster hier einfügen -->
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="img/logo.svg" alt="" width="38" height="38">
+      <span class="brand-name">Black<span class="brand-in">-In</span><span class="brand-sub">Verein zur Krisenvorsorge</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰ Menü</button>
+    <nav class="nav" id="nav" aria-label="Hauptmenü">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="wissen.html">Vorsorge-Wissen</a></li>
+        <li><a href="checklisten.html" aria-current="page">Checklisten</a></li>
+        <li><a href="termine.html">Termine</a></li>
+        <li><a href="verein.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inhalt">
+  <section class="hero page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Checklisten</p>
+      <h1>Abhaken, ausdrucken, vorbereitet sein</h1>
+      <p class="lead">Haken Sie ab, was Sie schon haben. Ihre Häkchen bleiben auf diesem Gerät gespeichert. Drucken Sie die Liste aus, denn im Blackout funktioniert keine Website.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cl-toolbar no-print">
+        <div class="progress">
+          <strong id="progress-label">0 erledigt</strong>
+          <div class="progress-bar" aria-hidden="true"><span></span></div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <button class="btn btn-dark" id="cl-print" type="button">🖨 Drucken</button>
+          <button class="btn btn-outline" id="cl-reset" type="button">Zurücksetzen</button>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card cl-group">
+          <h3>Wasser &amp; Getränke <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="w1"><span>Trinkwasser für 14 Tage<small>mind. 2 Liter pro Person und Tag, also 28 Liter pro Person</small></span></label></li>
+            <li><label><input type="checkbox" id="w2"><span>Säfte, H-Milch oder Tee</span></label></li>
+            <li><label><input type="checkbox" id="w3"><span>Kanister für Brauchwasser (WC, Waschen)</span></label></li>
+          </ul>
+        </div>
+
+        <div class="card cl-group">
+          <h3>Lebensmittel <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="l1"><span>Nudeln, Reis, Haferflocken</span></label></li>
+            <li><label><input type="checkbox" id="l2"><span>Konserven: Gemüse, Obst, Fisch, Fleisch, Eintopf</span></label></li>
+            <li><label><input type="checkbox" id="l3"><span>Knäckebrot oder Zwieback</span></label></li>
+            <li><label><input type="checkbox" id="l4"><span>Nüsse, Trockenobst, Müsliriegel</span></label></li>
+            <li><label><input type="checkbox" id="l5"><span>Honig, Marmelade, Erdnussbutter</span></label></li>
+            <li><label><input type="checkbox" id="l6"><span>Salz, Zucker, Öl, Gewürze</span></label></li>
+            <li><label><input type="checkbox" id="l7"><span>Babynahrung, Spezialkost, Tierfutter (falls nötig)</span></label></li>
+          </ul>
+        </div>
+
+        <div class="card cl-group">
+          <h3>Licht, Energie &amp; Kochen <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="e1"><span>Taschenlampe und Stirnlampe</span></label></li>
+            <li><label><input type="checkbox" id="e2"><span>Ersatzbatterien in passenden Größen</span></label></li>
+            <li><label><input type="checkbox" id="e3"><span>Batterie- oder Kurbelradio</span></label></li>
+            <li><label><input type="checkbox" id="e4"><span>Geladene Powerbank</span></label></li>
+            <li><label><input type="checkbox" id="e5"><span>Kerzen, Feuerzeug, Streichhölzer<small>Kerzen nie unbeaufsichtigt brennen lassen</small></span></label></li>
+            <li><label><input type="checkbox" id="e6"><span>Campingkocher mit Brennstoff<small>nur bei guter Belüftung verwenden</small></span></label></li>
+            <li><label><input type="checkbox" id="e7"><span>Warme Decken und Schlafsäcke</span></label></li>
+          </ul>
+        </div>
+
+        <div class="card cl-group">
+          <h3>Hygiene <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="h1"><span>Toilettenpapier und Küchenrolle</span></label></li>
+            <li><label><input type="checkbox" id="h2"><span>Feste Müllsäcke (auch als Notfall-WC)</span></label></li>
+            <li><label><input type="checkbox" id="h3"><span>Seife, Desinfektionsmittel, feuchte Tücher</span></label></li>
+            <li><label><input type="checkbox" id="h4"><span>Hygieneartikel und Windeln (falls nötig)</span></label></li>
+          </ul>
+        </div>
+
+        <div class="card cl-group">
+          <h3>Gesundheit <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="g1"><span>Dauermedikamente für mind. 2 Wochen</span></label></li>
+            <li><label><input type="checkbox" id="g2"><span>Hausapotheke: Schmerzmittel, Fiebermittel, Verbandszeug</span></label></li>
+            <li><label><input type="checkbox" id="g3"><span>Erste-Hilfe-Set</span></label></li>
+            <li><label><input type="checkbox" id="g4"><span>Fieberthermometer</span></label></li>
+            <li><label><input type="checkbox" id="g5"><span>Ersatzbrille, Hörgerätebatterien</span></label></li>
+          </ul>
+        </div>
+
+        <div class="card cl-group">
+          <h3>Dokumente &amp; Geld <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="d1"><span>Kopien von Ausweis, e-card, Versicherungen</span></label></li>
+            <li><label><input type="checkbox" id="d2"><span>Medikamenten- und Allergieliste</span></label></li>
+            <li><label><input type="checkbox" id="d3"><span>Wichtige Telefonnummern auf Papier</span></label></li>
+            <li><label><input type="checkbox" id="d4"><span>Bargeld in kleinen Scheinen und Münzen</span></label></li>
+            <li><label><input type="checkbox" id="d5"><span>Alles in einer wasserdichten Mappe</span></label></li>
+          </ul>
+        </div>
+
+        <div class="card cl-group">
+          <h3>Familienplan <small></small></h3>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="f1"><span>Treffpunkt vereinbart</span></label></li>
+            <li><label><input type="checkbox" id="f2"><span>Abholung der Kinder geklärt</span></label></li>
+            <li><label><input type="checkbox" id="f3"><span>Nachbarn kennen sich und wissen, wer Hilfe braucht</span></label></li>
+            <li><label><input type="checkbox" id="f4"><span>Alle kennen den Ort des Vorrats</span></label></li>
+          </ul>
+        </div>
+
+        <div class="card cl-group">
+          <h3>Notfallrucksack <small></small></h3>
+          <p class="muted" style="font-size:.95rem">Falls Sie Ihr Zuhause schnell verlassen müssen, einer pro Person.</p>
+          <ul class="cl-list">
+            <li><label><input type="checkbox" id="r1"><span>Dokumentenmappe</span></label></li>
+            <li><label><input type="checkbox" id="r2"><span>Trinkwasser und haltbarer Proviant zum Mitnehmen</span></label></li>
+            <li><label><input type="checkbox" id="r3"><span>Wechselkleidung und Regenschutz</span></label></li>
+            <li><label><input type="checkbox" id="r4"><span>Taschenlampe, Powerbank, Ladekabel</span></label></li>
+            <li><label><input type="checkbox" id="r5"><span>Medikamente und Erste-Hilfe-Set</span></label></li>
+            <li><label><input type="checkbox" id="r6"><span>Decke oder Schlafsack</span></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:32px">
+        <p><strong>Tipp:</strong> Gehen Sie die Liste zweimal im Jahr durch, etwa bei der Zeitumstellung. Dann prüfen Sie gleich Haltbarkeitsdaten und Batterien.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="brand-name">Black<span class="brand-in">-In</span><span class="brand-sub">Verein zur Krisenvorsorge</span></span></a>
+        <p style="margin-top:14px">Gemeinnütziger Verein mit Sitz in 6731 Sonntag, Vorarlberg.</p>
+        <p class="sos">Im Notfall: 112</p>
+      </div>
+      <div>
+        <h4>Inhalte</h4>
+        <ul>
+          <li><a href="wissen.html">Vorsorge-Wissen</a></li>
+          <li><a href="checklisten.html">Checklisten</a></li>
+          <li><a href="termine.html">Termine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Verein</h4>
+        <ul>
+          <li><a href="verein.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Black-In – Verein zur Krisenvorsorge</span>
+      <span>Die Informationen ersetzen keine Anweisungen von Behörden und Einsatzkräften.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

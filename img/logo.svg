@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="Black-In Logo">
+  <!-- Finsternis, aus der das Licht zurückkommt -->
+  <defs>
+    <radialGradient id="corona" cx="50%" cy="50%" r="50%">
+      <stop offset="55%" stop-color="#ffb020" stop-opacity="1"/>
+      <stop offset="72%" stop-color="#ffb020" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#ffb020" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="40" height="40" rx="9" fill="#07080a"/>
+  <circle cx="20" cy="20" r="17" fill="url(#corona)"/>
+  <circle cx="20" cy="20" r="10.6" fill="#ffd27a"/>
+  <circle cx="22.6" cy="18.4" r="10.4" fill="#07080a"/>
+</svg>
