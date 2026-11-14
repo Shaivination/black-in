@@ -354,8 +354,8 @@ table.simple tr:last-child td { border-bottom: 0; }
 .field-error { color: #ffb4a3; font-weight: 600; font-size: .95rem; margin: 6px 0 0; }
 .field-error:empty { display: none; }
 .field-hilfe { color: var(--muted); font-size: .9rem; margin: 6px 0 0; }
-.check { display: flex; gap: 12px; align-items: flex-start; cursor: pointer; font-weight: 500; color: var(--text); }
-.check input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--gold); flex: none; }
+.form-check { display: flex; gap: 12px; align-items: flex-start; cursor: pointer; font-weight: 500; color: var(--text); }
+.form-check input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--gold); flex: none; }
 .form .klein { font-size: .9rem; margin: 4px 0 16px; }
 .form-status { margin: 14px 0 0; font-weight: 700; color: #ffb4a3; }
 .form-status:empty { display: none; }
