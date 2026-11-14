@@ -261,6 +261,47 @@ table.simple tr:last-child td { border-bottom: 0; }
 .progress { flex: 1 1 260px; }
 .progress-bar { height: 10px; background: var(--line); border-radius: 999px; overflow: hidden; margin-top: 6px; }
 .progress-bar span { display: block; height: 100%; width: 0; background: var(--gold); box-shadow: var(--glow); transition: width .25s; }
+
+/* ---------- Vorbereitungs-Check mit leuchtender Ampel ---------- */
+.bereit-check {
+  --ampel: #ff3b30; --ampel-glow: rgba(255,59,48,.75);
+  display: flex; align-items: center; gap: 24px; max-width: 620px; margin: 0 0 24px;
+  background: var(--ink); border: 1px solid var(--ink-3); border-radius: var(--radius); padding: 20px 24px;
+}
+.bereit-check[data-stufe="orange"] { --ampel: #ff9500; --ampel-glow: rgba(255,149,0,.75); }
+.bereit-check[data-stufe="gruen"]  { --ampel: #30d158; --ampel-glow: rgba(48,209,88,.75); }
+.ampel {
+  flex: none; display: grid; gap: 9px; padding: 10px 9px;
+  background: linear-gradient(#1c1d22, #0d0e11); border: 2px solid #2f3139; border-radius: 16px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.6);
+}
+.licht { width: 30px; height: 30px; border-radius: 50%; opacity: .16; transition: opacity .3s, box-shadow .3s; }
+.licht-rot    { background: radial-gradient(circle at 35% 35%, #ff8a80, #ff3b30 55%, #a3160e); }
+.licht-orange { background: radial-gradient(circle at 35% 35%, #ffd08a, #ff9500 55%, #a35a00); }
+.licht-gruen  { background: radial-gradient(circle at 35% 35%, #9df5b3, #30d158 55%, #117a2f); }
+.bereit-check[data-stufe="rot"] .licht-rot,
+.bereit-check[data-stufe="orange"] .licht-orange,
+.bereit-check[data-stufe="gruen"] .licht-gruen {
+  opacity: 1;
+  box-shadow: 0 0 10px 2px var(--ampel-glow), 0 0 28px 6px var(--ampel-glow);
+  animation: ampel-leuchten 2.4s ease-in-out infinite;
+}
+@keyframes ampel-leuchten {
+  50% { box-shadow: 0 0 14px 4px var(--ampel-glow), 0 0 40px 12px var(--ampel-glow); }
+}
+@media (prefers-reduced-motion: reduce) { .licht { animation: none !important; } }
+.bereit-text { flex: 1; min-width: 0; }
+.bereit-frage { font-size: 1.25rem; font-weight: 800; color: var(--cream); margin: 0 0 4px; }
+.bereit-wert { margin: 0 0 6px; }
+.bereit-wert b { font-size: 2rem; color: var(--ampel); text-shadow: 0 0 18px var(--ampel-glow); font-variant-numeric: tabular-nums; margin-right: 6px; }
+.bereit-wert span { color: var(--on-dark-muted); font-weight: 600; }
+.bereit-check .progress-bar span { background: var(--ampel); box-shadow: 0 0 12px var(--ampel-glow); }
+.bereit-check .progress strong { font-size: .9rem; color: var(--on-dark-muted); font-weight: 600; }
+@media (max-width: 520px) {
+  .bereit-check { gap: 16px; padding: 16px; }
+  .licht { width: 24px; height: 24px; }
+  .bereit-frage { font-size: 1.08rem; }
+}
 .cl-group { break-inside: avoid; }
 .cl-group h3 { display: flex; justify-content: space-between; gap: 8px; }
 .cl-group h3 small { color: var(--muted); font-weight: 600; font-size: .85rem; }

@@ -62,9 +62,21 @@
       <!-- Blackout-Checkliste aus der Black-In App (Szenario „Längerer Blackout“, geplante Dauer 14 Tage) -->
       <h3 style="display:flex; align-items:center; gap:10px; flex-wrap:wrap"><span class="tag" style="font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:800; background:var(--gold-soft); color:var(--gold); border:1px solid rgba(245,197,24,.35); padding:3px 8px; border-radius:6px">Vorher</span> Blackout-Checkliste für 14 Tage</h3>
       <p class="muted">Die ersten Tage zählen vor allem Wasser, Licht, Information und Essen ohne Kochen. Für 14 Tage brauchen Sie zusätzlich eine Kochmöglichkeit ohne Strom, Wärme und Hygiene. Haken Sie ab, was Sie schon haben.</p>
-      <div class="progress no-print" style="max-width:420px; margin:0 0 20px">
-        <strong id="progress-label">0 erledigt</strong>
-        <div class="progress-bar" aria-hidden="true"><span></span></div>
+      <!-- Vorbereitungs-Check: Ampel rot < 50 %, orange 50–90 %, grün > 90 % (Logik in js/main.js) -->
+      <div class="bereit-check no-print" data-stufe="rot">
+        <div class="ampel" aria-hidden="true">
+          <span class="licht licht-rot"></span>
+          <span class="licht licht-orange"></span>
+          <span class="licht licht-gruen"></span>
+        </div>
+        <div class="bereit-text">
+          <p class="bereit-frage">Wie gut wärst du aktuell vorbereitet?</p>
+          <p class="bereit-wert"><b id="bereit-prozent">0 %</b> <span id="bereit-urteil" aria-live="polite">Ampel rot: Da fehlt noch einiges.</span></p>
+          <div class="progress">
+            <strong id="progress-label">0 erledigt</strong>
+            <div class="progress-bar" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
       </div>
       <div class="grid grid-3">
         <div class="card cl-group">
@@ -386,7 +398,7 @@
       <div>
         <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="38" height="38"><span class="brand-name">Black<span class="brand-in">-In</span><span class="brand-sub">Verein zur Krisenvorsorge</span></span></a>
         <p style="margin-top:14px">Gemeinnütziger Verein mit Sitz in 6731 Sonntag, Vorarlberg.</p>
-        <p class="sos">Im Notfall: 112</p>
+        <p class="sos">Notruf in Europa: 112</p>
       </div>
       <div>
         <h4>Inhalte</h4>

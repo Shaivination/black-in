@@ -33,6 +33,23 @@
     var label = document.getElementById('progress-label');
     if (bar) bar.style.width = pct + '%';
     if (label) label.textContent = done + ' von ' + boxes.length + ' erledigt (' + pct + ' %)';
+
+    // Ampel (Blackout-Checkliste): rot unter 50 %, orange 50–90 %, grün über 90 %
+    var check = document.querySelector('.bereit-check');
+    if (check) {
+      var anteil = (done / boxes.length) * 100;
+      var stufe = anteil > 90 ? 'gruen' : (anteil >= 50 ? 'orange' : 'rot');
+      var urteile = {
+        rot: 'Ampel rot: Da fehlt noch einiges.',
+        orange: 'Ampel orange: Auf gutem Weg, es fehlt noch etwas.',
+        gruen: 'Ampel grün: Gut vorbereitet!'
+      };
+      check.setAttribute('data-stufe', stufe);
+      var prozent = document.getElementById('bereit-prozent');
+      var urteil = document.getElementById('bereit-urteil');
+      if (prozent) prozent.textContent = pct + ' %';
+      if (urteil && urteil.textContent !== urteile[stufe]) urteil.textContent = urteile[stufe];
+    }
     document.querySelectorAll('.cl-group').forEach(function (g) {
       var all = g.querySelectorAll('input[type="checkbox"]');
       var d = 0; all.forEach(function (b) { if (b.checked) d++; });
