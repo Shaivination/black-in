@@ -1,0 +1,13 @@
+[
+  {
+    "id": "beispiel-blackout-vortrag",
+    "titel": "Beispiel: Blackout – was tun, wenn der Strom weg ist?",
+    "datum": "2027-03-14",
+    "uhrzeit": "19:00",
+    "ort": "Gemeindesaal Sonntag, 6731 Sonntag",
+    "beschreibung": "Vorlage für einen Termin. Kopieren, anpassen und \"aktiv\" auf true setzen.",
+    "max_teilnehmer": 40,
+    "anmeldeschluss": "2027-03-12",
+    "aktiv": false
+  }
+]

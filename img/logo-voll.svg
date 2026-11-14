@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 10 320 350" role="img" aria-label="Black-In Logo: Glühbirne mit B, Blitz und IN">
+  <!-- Volles Logo: leuchtende Glühbirne mit "B⚡IN" -->
+  <defs>
+    <radialGradient id="schein" cx="200" cy="164" r="152" gradientUnits="userSpaceOnUse">
+      <stop offset="0.66" stop-color="#fff6d2" stop-opacity="1"/>
+      <stop offset="0.72" stop-color="#f5c518" stop-opacity=".8"/>
+      <stop offset="0.86" stop-color="#b8920e" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#b8920e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glas" cx="240" cy="216" r="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9c3a20"/>
+      <stop offset=".55" stop-color="#5a1c12"/>
+      <stop offset="1" stop-color="#1a0606"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Lichtschein -->
+  <circle cx="200" cy="164" r="152" fill="url(#schein)"/>
+  <path d="M152 268 L148 260 L167 300 L234 300 L253 260 Z" fill="#f5c518" opacity=".35"/>
+
+  <!-- Glaskolben -->
+  <path d="M148.5 260 A107 107 0 1 1 252.5 260 L234 299 L167 299 Z" fill="url(#glas)" stroke="#fff4cc" stroke-width="1.5"/>
+  <path d="M107 150 A104 104 0 0 1 190 72" fill="none" stroke="#fff4d6" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Schriftzug B ⚡ IN -->
+  <g fill="#f3e6d0" font-family="Georgia, 'Times New Roman', Times, serif" font-weight="700" font-size="55">
+    <text x="139" y="164">B</text>
+    <text x="221" y="164">IN</text>
+  </g>
+  <path d="M190 118 L208.5 118 L201 140 L212.5 140 L191.5 168 L197 146.5 L186.5 146.5 Z" fill="#f5c518"/>
+
+  <!-- Glühfaden und Drähte -->
+  <path d="M171 204 L187 294 M229 204 L213 294" stroke="#d6aa6a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M171 203 C175 191 182 191 186 203 S196 215 200 203 S210 191 214 203 S225 215 229 203" fill="none" stroke="#f5c518" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Sockel -->
+  <g fill="#1f1f24" stroke="#d6aa6a" stroke-width="2.2">
+    <rect x="164" y="303" width="73" height="14" rx="3"/>
+    <rect x="164" y="320" width="73" height="14" rx="3"/>
+    <path d="M174 337 L226 337 L215 351 L185 351 Z" stroke-linejoin="round"/>
+  </g>
+</svg>

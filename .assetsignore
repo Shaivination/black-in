@@ -1,0 +1,18 @@
+# Diese Dateien und Ordner werden NICHT als Website ausgeliefert
+.git
+.gitignore
+.assetsignore
+.wrangler
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+.nojekyll
+node_modules
+worker
+migrations
+daten
+package.json
+package-lock.json
+wrangler.jsonc
+LIESMICH.md

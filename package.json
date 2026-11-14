@@ -1,0 +1,14 @@
+{
+  "name": "black-in",
+  "private": true,
+  "description": "Website des Vereins Black-In mit Anmeldung zu Veranstaltungen (Cloudflare Worker + D1)",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "db:lokal": "wrangler d1 migrations apply black-in --local",
+    "db:online": "wrangler d1 migrations apply black-in --remote",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.152.0"
+  }
+}

@@ -1,0 +1,39 @@
+// Cloudflare-Konfiguration für black-in
+// Geheimnisse (Passwörter, API-Schlüssel, E-Mail-Adressen) stehen NICHT hier,
+// sondern werden mit `npx wrangler secret put NAME` gesetzt (siehe LIESMICH.md).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "black-in",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-10-01",
+
+  // Die Website-Dateien liegen direkt in diesem Ordner.
+  // Was nicht öffentlich sein darf, steht in .assetsignore.
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "not_found_handling": "none",
+    "run_worker_first": ["/api/*"]
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "black-in",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+
+  // Wöchentlicher Bericht: Montag 04:00 und 05:00 UTC.
+  // Der Worker sendet nur, wenn es in Wien gerade 06:00 ist (Sommer-/Winterzeit).
+  "triggers": {
+    "crons": ["0 4 * * 1", "0 5 * * 1"]
+  },
+
+  "vars": {
+    "MAIL_ABSENDER_NAME": "Black-In – Verein zur Krisenvorsorge"
+  },
+
+  "observability": { "enabled": true }
+}
