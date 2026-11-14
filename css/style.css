@@ -249,6 +249,21 @@ ul.check li::before {
   background: var(--gold); box-shadow: 0 0 8px rgba(245,197,24,.8);
 }
 ul.check li:last-child { margin-bottom: 0; }
+/* PDF-Download */
+.pdf-box {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px;
+  margin-top: 28px; max-width: 860px; padding: 18px 22px; border-radius: var(--radius);
+  background: rgba(7,8,10,.6); border: 1px solid rgba(214,170,106,.45);
+}
+.pdf-box > div { flex: 1 1 320px; }
+.pdf-box strong { color: var(--cream); }
+.pdf-box p { margin: 4px 0 0; color: var(--on-dark-muted); font-size: .95rem; }
+.pdf-link { margin: -4px 0 0; font-size: .95rem; }
+.pdf-link a { font-weight: 700; }
+.pdf-link a::before { content: "↓ "; }
+@media print { .pdf-box, .pdf-link { display: none !important; } }
+.liste-titel { font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; color: var(--brass); margin: 22px 0 12px; }
+.card h3 + .liste-titel { margin-top: 8px; }
 
 table.simple { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; border: 1px solid var(--line); }
 table.simple th, table.simple td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="de-AT" class="handbuch-seite">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notfall-Handbuch – Black-In</title>
+  <meta name="description" content="Das Notfall-Handbuch von Black-In zum Ausdrucken und Offline-Lesen.">
+  <!-- Druckvorlage für die PDFs. Die Inhalte kommen direkt aus wissen.html, checklisten.html und index.html.
+       ?thema=<id> zeigt nur ein Thema. PDFs neu erzeugen: npm run pdf -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/handbuch.css">
+</head>
+<body class="handbuch">
+  <div class="hb-leiste no-print">
+    <a href="wissen.html">← Zurück zum Vorsorge-Wissen</a>
+    <button type="button" class="btn btn-primary" id="hb-drucken">Drucken oder als PDF speichern</button>
+  </div>
+  <main id="hb-inhalt" aria-busy="true">
+    <p class="hb-laden">Das Handbuch wird zusammengestellt …</p>
+  </main>
+  <script src="js/handbuch.js"></script>
+</body>
+</html>

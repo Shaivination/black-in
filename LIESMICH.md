@@ -103,6 +103,30 @@ Bericht lokal auslösen: `http://localhost:8787/__scheduled?cron=0+5+*+*+1`
 4. Die fünf Geheimnisse mit `npx wrangler secret put …` setzen
 5. `npm run deploy`
 
+## PDFs (Notfall-Handbuch)
+Im Ordner `pdf/` liegen das Gesamt-Handbuch (`black-in-notfall-handbuch.pdf`) und je ein
+PDF pro Thema (`black-in-<thema>.pdf`). Sie werden aus `handbuch.html` erzeugt, das die
+Inhalte direkt aus `wissen.html`, `checklisten.html` und `index.html` holt.
+
+**Nach jeder inhaltlichen Änderung neu erzeugen:** `npm run pdf` (braucht Chrome oder Edge),
+danach die PDFs mit hochladen. Ein neues Thema in `wissen.html` bekommt automatisch ein eigenes PDF.
+
+## Google und Link-Vorschau
+- Jede Seite hat Titel, Beschreibung, `canonical`-Adresse und Vorschaubild (`img/vorschau.png`)
+  für Google, WhatsApp, Facebook usw. Die Startseite hat zusätzlich Vereinsangaben mit Logo
+  (`img/logo-512.png`) als strukturierte Daten.
+- `sitemap.xml` listet alle Seiten. `robots.txt` wirkt erst auf einer eigenen Domain.
+- Impressum, Datenschutz und `handbuch.html` sind bewusst auf `noindex` (nicht in Google).
+- Bilder neu erzeugen (nach Logo-Änderung): `npm run bilder`
+
+### Beim Umzug auf die eigene Domain
+1. `npm run adresse -- https://www.black-in.at` (stellt alle Adressen um)
+2. `npm run pdf` (die Adresse steht auch im Handbuch)
+3. Hochladen
+4. In der [Google Search Console](https://search.google.com/search-console) die Domain
+   hinzufügen, bestätigen und `sitemap.xml` einreichen. Dann erscheint die Seite meist
+   innerhalb weniger Tage in Google.
+
 ## Besucherstatistik
 Den Matomo- oder Plausible-Code in **jeder** HTML-Datei an der Stelle
 `<!-- Besucherstatistik ... -->` im `<head>` einfügen.

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<title>Vorschaubild</title>
+<!-- Vorlage für img/vorschau.png (1200 × 630), das Bild für Google, WhatsApp, Facebook usw.
+     Neu erzeugen mit: npm run bilder -->
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: "Segoe UI", system-ui, Arial, sans-serif; color: #f3e6d0;
+    background:
+      radial-gradient(700px 420px at 24% 52%, rgba(245,197,24,.22), rgba(154,58,32,.20) 45%, transparent 72%),
+      radial-gradient(900px 300px at 50% 120%, rgba(245,197,24,.35), transparent 70%),
+      #07080a;
+    display: flex; align-items: center; gap: 56px; padding: 0 80px; box-sizing: border-box;
+  }
+  img { width: 380px; height: auto; flex: none; }
+  .marke { font-size: 104px; font-weight: 900; letter-spacing: .06em; line-height: 1; color: #fff; }
+  .marke span { color: #f5c518; text-shadow: 0 0 30px rgba(245,197,24,.6); }
+  .unter { font-size: 30px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #a9adb6; margin-top: 14px; }
+  .claim { font-size: 46px; font-weight: 800; margin-top: 44px; }
+  .claim span { color: #f5c518; }
+  .themen { font-size: 26px; color: #d6aa6a; margin-top: 18px; }
+  .linie { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: linear-gradient(90deg, transparent, #f5c518 50%, transparent); }
+</style>
+</head>
+<body>
+  <img src="../img/logo-voll.svg" alt="">
+  <div>
+    <div class="marke">BLACK<span>-IN</span></div>
+    <div class="unter">Verein zur Krisenvorsorge</div>
+    <div class="claim">Licht, wenn's <span>dunkel</span> wird.</div>
+    <div class="themen">Vorsorge-Wissen · Checklisten · Notfall-Handbuch</div>
+  </div>
+  <div class="linie"></div>
+</body>
+</html>

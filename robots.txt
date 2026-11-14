@@ -1,0 +1,8 @@
+# Suchmaschinen dürfen alles lesen.
+# Hinweis: Wirksam erst, wenn die Website auf einer eigenen Domain liegt
+# (robots.txt muss im Hauptverzeichnis der Domain stehen).
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://shaivination.github.io/black-in/sitemap.xml

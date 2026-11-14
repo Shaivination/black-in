@@ -6,7 +6,10 @@
     "dev": "wrangler dev --test-scheduled",
     "db:lokal": "wrangler d1 migrations apply black-in --local",
     "db:online": "wrangler d1 migrations apply black-in --remote",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "pdf": "node werkzeuge/pdf-erstellen.js",
+    "bilder": "node werkzeuge/bilder-erstellen.js",
+    "adresse": "node werkzeuge/adresse-setzen.js"
   },
   "devDependencies": {
     "wrangler": "4.152.0"

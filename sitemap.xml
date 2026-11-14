@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Liste aller Seiten für Suchmaschinen. Adresse ändern: npm run adresse -- https://neue-adresse -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://shaivination.github.io/black-in/</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://shaivination.github.io/black-in/wissen.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://shaivination.github.io/black-in/checklisten.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://shaivination.github.io/black-in/termine.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://shaivination.github.io/black-in/verein.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://shaivination.github.io/black-in/kontakt.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://shaivination.github.io/black-in/pdf/black-in-notfall-handbuch.pdf</loc><lastmod>2026-11-14</lastmod></url>
+</urlset>
